@@ -60,6 +60,10 @@ client.on('message', message => {
 			message.channel.send('Hello' + member.displayName + '!')
 
 		}
+		else if (message.content === 'help') {
+			let helpList = '```ping\nhello\nm!channel\nm!n3in\nm!welcome\nm!give```';
+			message.channel.send(helpList);
+		}
 	
 	}
 )
